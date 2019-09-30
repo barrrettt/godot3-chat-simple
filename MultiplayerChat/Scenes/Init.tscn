@@ -1,0 +1,219 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/Init.cs" type="Script" id=1]
+
+[node name="Init" type="Control"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="chat" type="Panel" parent="."]
+self_modulate = Color( 0.45098, 0.431373, 0.631373, 1 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -300.0
+margin_top = -149.815
+margin_right = 300.0
+margin_bottom = 148.185
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="txt" type="RichTextLabel" parent="chat"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 190.0
+margin_top = 12.0
+margin_right = -18.0
+margin_bottom = -36.0
+size_flags_horizontal = 2
+size_flags_vertical = 2
+bbcode_enabled = true
+bbcode_text = "[color=red] Hi[/color] Select create server or [url={\"data\"=\"hi\"}]play[/url]"
+text = " Hi Select create server or play"
+scroll_following = true
+
+[node name="back" type="Control" parent="chat"]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+size_flags_horizontal = 2
+size_flags_vertical = 2
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="buSend" type="Button" parent="chat/back"]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -50.0
+margin_top = -30.0
+margin_right = -5.0
+margin_bottom = -5.0
+text = "Send"
+
+[node name="in" type="LineEdit" parent="chat/back"]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 3.0
+margin_top = -29.0
+margin_right = -53.0
+margin_bottom = -5.0
+placeholder_text = "Message..."
+caret_blink = true
+
+[node name="clients" type="Panel" parent="chat"]
+editor/display_folded = true
+anchor_bottom = 1.0
+margin_left = 5.0
+margin_top = 8.0
+margin_right = 182.0
+margin_bottom = -35.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="clients" type="RichTextLabel" parent="chat/clients"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 5.0
+margin_top = 5.0
+margin_right = -5.0
+margin_bottom = -5.0
+meta_underlined = false
+
+[node name="buExit" type="Button" parent="chat"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -62.0
+margin_top = 5.0
+margin_right = -5.0
+margin_bottom = 42.0
+text = "X"
+
+[node name="start" type="Control" parent="."]
+editor/display_folded = true
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 189.563
+margin_top = 94.1971
+margin_right = 189.563
+margin_bottom = 94.1971
+rect_pivot_offset = Vector2( -177.187, -133.327 )
+
+[node name="panel" type="Panel" parent="start"]
+editor/display_folded = true
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -287.707
+margin_top = -216.903
+margin_right = -71.7075
+margin_bottom = 18.0974
+rect_pivot_offset = Vector2( 104, 55 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="Label" type="Label" parent="start/panel"]
+margin_left = 9.0
+margin_top = 15.0
+margin_right = 136.0
+margin_bottom = 30.0
+rect_pivot_offset = Vector2( 28.2652, 4.81483 )
+text = "SERVER PORT"
+autowrap = true
+
+[node name="Label2" type="Label" parent="start/panel"]
+margin_left = 9.0
+margin_top = 41.0
+margin_right = 139.0
+margin_bottom = 56.0
+rect_pivot_offset = Vector2( 28.2652, 4.81483 )
+text = "MAX CLIENTS"
+autowrap = true
+
+[node name="Label3" type="Label" parent="start/panel"]
+margin_left = 7.5388
+margin_top = 121.76
+margin_right = 101.538
+margin_bottom = 136.76
+rect_pivot_offset = Vector2( 28.2652, 4.81483 )
+text = "CLIENT DATA"
+autowrap = true
+
+[node name="Label4" type="Label" parent="start/panel"]
+margin_left = 9.97058
+margin_top = 152.294
+margin_right = 98.9706
+margin_bottom = 167.294
+rect_pivot_offset = Vector2( 28.2652, 4.81483 )
+text = "SERVER IP"
+autowrap = true
+
+[node name="lineIP" type="LineEdit" parent="start/panel"]
+margin_left = 106.0
+margin_top = 147.0
+margin_right = 207.0
+margin_bottom = 172.0
+text = "127.0.0.1"
+
+[node name="linePort" type="LineEdit" parent="start/panel"]
+margin_left = 145.415
+margin_top = 8.85259
+margin_right = 203.415
+margin_bottom = 33.8526
+text = "5432"
+
+[node name="lineMax" type="LineEdit" parent="start/panel"]
+margin_left = 145.0
+margin_top = 36.0
+margin_right = 203.0
+margin_bottom = 61.0
+text = "99"
+max_length = 3
+
+[node name="lineName" type="LineEdit" parent="start/panel"]
+margin_left = 104.428
+margin_top = 116.986
+margin_right = 207.428
+margin_bottom = 141.986
+max_length = 10
+placeholder_text = "Name"
+
+[node name="buHost" type="Button" parent="start/panel"]
+margin_left = 9.0
+margin_top = 65.0
+margin_right = 207.0
+margin_bottom = 102.0
+text = "Start server"
+
+[node name="buJoin" type="Button" parent="start/panel"]
+margin_left = 14.0
+margin_top = 181.0
+margin_right = 206.0
+margin_bottom = 217.0
+text = "Play"
+[connection signal="pressed" from="chat/back/buSend" to="." method="onClickSend"]
+[connection signal="text_entered" from="chat/back/in" to="." method="onTextEntered"]
+[connection signal="meta_clicked" from="chat/clients/clients" to="." method="onClientListClickMeta"]
+[connection signal="pressed" from="chat/buExit" to="." method="onClickExit"]
+[connection signal="pressed" from="start/panel/buHost" to="." method="onClickHost"]
+[connection signal="pressed" from="start/panel/buJoin" to="." method="onClickJoin"]
