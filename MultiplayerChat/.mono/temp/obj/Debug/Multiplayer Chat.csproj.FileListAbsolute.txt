@@ -1,0 +1,6 @@
+E:\GITHUB\Chat-Godot-C-simple-example\MultiplayerChat\.mono\temp\bin\Debug\Multiplayer Chat.dll
+E:\GITHUB\Chat-Godot-C-simple-example\MultiplayerChat\.mono\temp\bin\Debug\Multiplayer Chat.pdb
+E:\GITHUB\Chat-Godot-C-simple-example\MultiplayerChat\.mono\temp\obj\Debug\Multiplayer Chat.csprojAssemblyReference.cache
+E:\GITHUB\Chat-Godot-C-simple-example\MultiplayerChat\.mono\temp\obj\Debug\Multiplayer Chat.csproj.CoreCompileInputs.cache
+E:\GITHUB\Chat-Godot-C-simple-example\MultiplayerChat\.mono\temp\obj\Debug\Multiplayer Chat.dll
+E:\GITHUB\Chat-Godot-C-simple-example\MultiplayerChat\.mono\temp\obj\Debug\Multiplayer Chat.pdb
