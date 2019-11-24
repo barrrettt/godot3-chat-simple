@@ -7,3 +7,5 @@ Godot proyect is a 1 scene and 1 c# script. This is an easy and simple example t
 I also use RichTextLabel: colors, and meta click signal to show player data model.
 
 Have fun.
+
+<img src = "screenshot.png" width = 80%>
